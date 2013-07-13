@@ -1,0 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Fauna+One);
+
+#header{
+	margin-top: 2%;
+	margin-left: 5%;
+}
+
+.lblHeader{
+	font-size: 2em;
+	font-family: 'Fauna One', serif;
+}
+
+#content{
+	margin-top: 5%; 
+	margin-left: 22%; 
+	diplay: none;	
+}
+
+#versus{
+	margin-top: 100%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-top: 10px;
+}
+
+.imgMovie{
+	border: 0;
+	display: none;
+}

@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Fauna+One);
+
+.lblHeaderRanking{
+	font-size: 1.4em;
+	font-family: 'Fauna One', serif;
+}
+
+#content{
+	
+}
+
+div.left{
+	float: left;
+	width: 50%;
+	margin-left: -15%;
+}
+
+div.right{
+	margin-left: 35%;
+	width: 50%;
+}
+
+ul.none{
+	list-style-type: none;
+}
+
+ul.none li{
+	padding-top: 7%;
+}
+
+span.first{
+	font-size: 1.2em;
+	font-family: 'Fauna One', serif;
+}
+
+span.others{
+	font-size: 1em;
+	font-family: 'Fauna One', serif;
+}
+
+img.firstImage{
+	width: 10%;
+	heigth: 5%;
+}
+
+img.othersImage{
+	width: 6%;
+	heigth: 2%;
+}
