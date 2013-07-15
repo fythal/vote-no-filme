@@ -35,13 +35,9 @@ public class VotacaoController implements Serializable{
 	
 	@Post
 	@Path("/filmes/persistVotos")
-	public void persistVotos(String data){
-		System.out.println(data);
-		
+	public void persistVotos(String data){		
 		Gson gson = new GsonBuilder().create();
 		VotacaoWrapper votacao = gson.fromJson(data, VotacaoWrapper.class);
-			
-		System.out.println(votacao.getNome());
 		
 		try{
 			UsuarioTO usuario = new UsuarioTO();
@@ -52,7 +48,6 @@ public class VotacaoController implements Serializable{
 			
 			votoFacade.createVotos(votacao, usuario);
 			result.use(Results.json()).from("REDIRECT").serialize();
-			//result.redirectTo(RelatorioController.class).relatorio(votacao.getEmail());
 		}catch(Exception e){
 			if(e instanceof VotacaoException){
 				result.use(Results.json()).from(e.getMessage()).serialize();
